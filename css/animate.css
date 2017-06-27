@@ -1,0 +1,44 @@
+.animate{
+    animation: 1s linear;
+}
+.infinite{
+    animation-iteration-count: infinite;
+}
+.forwards{
+    animation-fill-mode: forwards !important;
+}
+
+/*“Ù¿÷≤•∑≈‘›Õ£*/
+.rotateMusic{
+    animation-name:rotateMusic;
+}
+@keyframes rotateMusic{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+.movescale{
+    animation-name: movescale;
+    animation: movescale 12s linear infinite;
+}
+@keyframes movescale {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+.movetext{
+    animation-name: movetext;
+}
+@keyframes movetext {
+    0%{transform: scale(0)}
+    100%{transform: scale(1)}
+}
+/*º˝Õ∑“∆∂Ø*/
+.move{
+    animation-name: move;
+}
+@keyframes move{
+    0%{transform: translateY(0);opacity: 0;rotateX(360deg)}
+    50%{opacity: 0.3;}
+    100%{transform: translateY(0.5rem);opacity: 1}
+}
