@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="js/fontsize.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .clear{
+            clear: both;
+        }
+        header{
+            width: 7.2rem;
+            height: 0.96rem;
+            margin: 0 auto;
+        }
+        header a{
+            float: left;
+            width: 0.2rem;
+            height: 0.39rem;
+            margin: 0.25rem 0 0 0.25rem;
+            font-size: 0;
+        }
+        header a img{
+            width: 100%;
+            height: 100%;
+        }
+        header h2{
+            font-size: 0.36rem;
+            text-align: center;
+            line-height: 0.96rem;
+            background: #2aacff;
+            color: white;
+        }
+        /*nav*/
+        nav{
+            width: 4.63rem;
+            height: 3.07rem;
+            margin: 0.5rem auto 0.7rem auto;
+        }
+        nav img{
+            width: 100%;
+            height: 100%;
+        }
+        main{
+            width: 7.2rem;
+            margin: 0 auto;
+        }
+        main h1{
+            font-size: 0.33rem;
+            padding: 0.2rem 0 0 0.5rem;
+            border-top: 0.01rem solid #cccccc;
+        }
+        main span{
+            font-size: 0.3rem;
+            color: #d11f1f;
+        }
+        main p{
+            font-size: 0.3rem;
+            color: #8a8a8a;
+            font-weight: bold;
+            margin: 0.2rem 0 0 0.5rem;
+        }
+        main h2{
+            color: #d11f1f;
+            font-size: 0.3rem;
+            float: left;
+            font-weight: bold;
+            text-align: center;
+            line-height:0.2rem;
+            border: 1px solid #cccccc;
+            padding: 0.3rem 1.5rem;
+            margin-top: 0.2rem;
+            border-left: 0.01rem solid white;
+            border-bottom: 0.02rem solid #d11f1f;
+        }
+        main h3{
+            color: black;
+            font-size: 0.3rem;
+            float: left;
+            text-align: center;
+            line-height: 0.2rem;
+            border: 0.01rem solid #cccccc;
+            padding: 0.3rem 1.44rem;
+            margin-top: 0.2rem;
+            border-right: 0.01rem solid white;
+        }
+
+         main .main1{
+            width: 6.6rem;
+            height: 4.2rem;
+            margin: 0.3rem auto 0.6rem auto;
+        }
+        main .main1 img{
+            width: 100%;
+            height: 100%;
+        }
+        /*section1*/
+        .section1{
+            width: 7.2rem;
+            height: 5rem;
+            margin: 0 auto;
+            background: #e5e5e5;
+        }
+        .section1 .pic1{
+            width: 2.51rem;
+            height: 0.47rem;
+            margin: 0 auto;
+        }
+        .section1 .pic1 img{
+            width: 100%;
+            height: 100%;
+        }
+        .section1 h2{
+            font-size: 0.5rem;
+            margin: 0.8rem 0 0 1rem;
+        }
+        .section1 span{
+            font-size: 0.5rem;
+            color: #ff0000;
+            font-weight: bold;
+        }
+        .section1 p{
+            font-size: 0.2rem;
+            font-weight: bold;
+            margin: 0.1rem 0 0 0.7rem;
+        }
+        .section1 .pic2{
+            width: 5.83rem;
+            height: 1.64rem;
+            margin: 0.5rem auto;
+        }
+        .section1 .pic2 img{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        /*section2*/
+        .section2{
+            width: 7.2rem;
+            margin: 0 auto;
+        }
+        .section2 h1{
+            font-size: 0.5rem;
+            margin: 0.5rem 0 0 1.6rem;
+        }
+        .section2 h2{
+            font-size: 0.4rem;
+            margin: 0.3rem 0 0 0.6rem;
+        }
+        .section2 p{
+            font-size: 0.27rem;
+            font-weight: bold;
+            margin: 0.5rem 0 0 0.2rem;
+        }
+        .section2 .pic3{
+            width: 6.6rem;
+            height: 3.81rem;
+            margin: 0.45rem auto;
+        }
+        .section2 .pic3 img{
+            width: 100%;
+            height: 100%;
+        }
+
+        /*section3*/
+        .section3{
+            width: 7.2rem;
+            margin: 0 auto;
+            background: #e5e5e5;
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+        .section3 h1{
+            font-size: 0.5rem;
+            margin: 0.6rem 0 0 1.6rem;
+            padding-top: 0.6rem;
+        }
+        .section3 h2{
+            font-size: 0.33rem;
+            line-height: 0.6rem;
+            margin: 0.4rem 0 0 0.2rem;
+        }
+        .section3 .pic4{
+            width: 4.67rem;
+            height: 4.79rem;
+            margin: 0.5rem auto;
+        }
+        .section3 .pic4 img{
+            width: 100%;
+            height: 100%;
+        }
+        .section3 h3{
+            font-size: 0.37rem;
+            margin-left: 0.7rem;
+        }
+        .section3 p{
+            font-size: 0.32rem;
+            margin: 0.4rem 0 0 0.4rem;
+        }
+        .section3 span{
+            color: #ff0000;
+        }
+        /*table*/
+        .section3 table{
+            width: 6.55rem;
+            margin: 0.5rem auto 0 auto;
+            border-collapse: collapse;
+        }
+        .section3 table tr{
+            width: 6.55rem;
+            font-size: 0.27rem;
+            margin: 0 0.2rem 0 0.2rem;
+        }
+        .section3 table td{
+            width: 2rem;
+            height: 0.5rem;
+            text-align: left;
+            padding: 0 0.2rem 0 0.2rem;
+            border-right: 1px solid #c9c8c8;
+        }
+        .section3 table tr:nth-child(1){
+            background: white;
+            margin: 0 0.2rem 0 0.2rem;
+        }
+        .section3 table tr:nth-child(3){
+            background: white;
+            margin: 0 0.2rem 0 0.2rem;
+        }
+        .section3 table tr:nth-child(5){
+            background: white;
+            margin: 0 0.2rem 0.5rem 0.2rem;
+        }
+        .section3 .pic5{
+            float: left;
+            width: 1.1rem;
+            height: 1.1rem;
+            position: absolute;
+        }
+        .section3 .pic5 img{
+            width: 100%;
+            height: 100%;
+            margin-left: 0.3rem;
+        }
+        .section3 .pic6{
+            float: left;
+            width: 1.97em;
+            height: 1.08em;
+            position: absolute;
+        }
+        .section3 .pic6 img{
+            width: 100%;
+            height: 100%;
+            padding-left: 4.9rem;
+        }
+
+
+        /*section3*/
+        .section4{
+            width: 7.2rem;
+            margin: 0.25rem auto;
+
+        }
+        .section4 .box1{
+            width: 2.2rem;
+            float: left;
+            background: #c2c2c2;
+        }
+        .section4 .box1 h1{
+            color: white;
+            padding: 0.3rem 0.4rem;
+            font-size: 0.3rem;
+        }
+        .section4 .box1 .pic7{
+            width: 1.23rem;
+            height: 0.89rem;
+        }
+        .section4 .box1 .pic7 img{
+            width: 100%;
+            height: 100%;
+            padding: 0 0.4rem 0;
+        }
+        .section4 .box1 h2{
+            color: white;
+            padding: 0.3rem 0.1rem;
+            font-size: 0.25rem;
+            line-height: 0.3rem;
+        }
+
+        /*footer*/
+        footer{
+            width: 7.2rem;
+            margin: 0 auto;
+        }
+        footer h1{
+            text-align: center;
+            font-size: 0.35rem;
+            color: #c2c2c2;
+            margin-top: 0.4rem;
+        }
+        footer .pic8{
+            width: 2.04rem;
+            height: 2.06rem;
+            margin: 0 auto;
+        }
+        footer .pic8 img{
+            width: 100%;
+            height: 100%;
+            margin-top: 0.5rem;
+        }
+        footer h2{
+            text-align: center;
+            font-size: 0.3rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href=""><img src="images/箭头.jpg" alt=""/></a>
+    <h2>产品详情</h2>
+</header>
+<nav>
+    <img src="images/鲸鱼1.jpg" alt=""/>
+</nav>
+<main>
+    <h1>智信购定制化 55 寸全高清LCD 立式广告</h1>
+    <p>价格: <span>￥29000.00元 </span></p>
+
+    <h2>描述</h2><h3>参数</h3>
+    <div class="clear"></div>
+    <div class="main1">
+        <img src="images/鲸鱼2.jpg" alt=""/>
+    </div>
+</main>
+<section class="section1">
+    <div class="pic1">
+        <img src="images/文字.jpg" alt=""/>
+    </div>
+    <h2>为什么大家<span>都选12345V</span></h2>
+    <p>Why do you choose 12345V Why do you choose 12345V</p>
+    <div class="pic2">
+        <img src="images/yuan-03.jpg" alt=""/>
+    </div>
+</section>
+<section class="section2">
+    <h1>IPS屏-精选面板</h1>
+    <h2>高清液晶面板，画质细腻精彩呈现；</h2>
+    <p>40英寸TFT面板，窄边设计，双屏拼缝为20mm，完美的拼
+    接效果；178度的超宽可视角度。</p>
+    <div class="pic3">
+        <img src="images/flower.jpg" alt=""/>
+    </div>
+</section>
+<section class="section3">
+    <h1>55英寸-黄金尺寸</h1>
+    <h2>55寸黄金比例无论你是看电影、玩游戏，还是 <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;办公都能满足你。</h2>
+    <div class="pic4">
+        <img src="images/鲸鱼3.jpg" alt=""/>
+    </div>
+    <h3>不知道选什么尺寸？选55寸就对了</h3>
+    <p>性价比超高 <span>全网40%的客户</span>选55寸显示器产品</p>
+
+    <table>
+        <tr>
+            <td>尺寸</td>
+            <td>32英寸</td>
+            <td style="color: #ff0000;border-right: 0">55英寸</td>
+        </tr>
+        <tr>
+            <td>分辨率</td>
+            <td>1920*1080</td>
+            <td style="color: #ff0000;border-right: 0">1920*1080</td>
+        </tr>
+        <tr>
+            <td>点距</td>
+            <td>0.245mm</td>
+            <td style="color: #ff0000;border-right: 0">0.245mm</td>
+        </tr>
+        <tr>
+            <td>价格</td>
+            <td>3.6万左右</td>
+            <td style="color: #ff0000;border-right: 0">3.6万左右</td>
+        </tr>
+        <tr>
+            <td>评价</td>
+            <td>屏幕较小，看电影不够爽，点距小看字费力</td>
+            <td style="color: #ff0000;border-right: 0">屏幕和点距大小适中，画质精细，无论是影音娱乐还是上网办公都比较方便</td>
+        </tr>
+    </table>
+    <div class="pic5">
+        <img src="images/pk.jpg" alt=""/>
+    </div>
+    <div class="pic6">
+        <img src="images/电话.jpg" alt=""/>
+    </div>
+    <div class="clear"></div>
+</section>
+<section class="section4">
+    <div class="box1" style="margin: 0 0.02rem 0 0.25rem">
+        <h1>包无亮点</h1>
+        <div class="pic7">
+            <img src="images/dianshi.jpg" alt=""/>
+        </div>
+
+        <h2>我们从源头进行把关精选A+屏，保无毫点 <br/> <br/></h2>
+    </div>
+    <div class="box1" style="margin-right: 0.02rem">
+        <h1>顺丰包邮</h1>
+        <div class="pic7">
+            <img src="images/xiaoche.jpg" alt=""/>
+        </div>
+
+        <h2>全国顺丰包邮，精选更快速、更安全、服务更好的快递</h2>
+    </div>
+    <div class="box1" style="margin: 0">
+        <h1>无忧退换</h1>
+        <div class="pic7">
+            <img src="images/jiantou.jpg" alt=""/>
+        </div>
+
+        <h2>7天无理由退换货，15天质量问题免费换新，让您退换无忧</h2>
+    </div>
+    <div class="clear"></div>
+</section>
+<footer>
+    <h1>如需购买，请拨打400-6699-901</h1>
+    <div class="pic8">
+        <img src="images/二维码.jpg" alt=""/>
+    </div>
+    <h2>扫一扫关注我们</h2>
+</footer>
+</body>
+</html>
